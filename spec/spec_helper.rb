@@ -4,6 +4,7 @@ ENV["RAILS_ENV"] ||= "test"
 
 require_relative "../lib/redis_ui"
 require "pry"
+require "mock_redis"
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
