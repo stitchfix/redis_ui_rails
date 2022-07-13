@@ -16,6 +16,7 @@ gem 'redis_ui'
 Rails.application.routes.draw do
   mount RedisUi::Engine => "/redis_ui"
 end
+```
 
 3. Precompile your assets
 
