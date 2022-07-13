@@ -68,7 +68,6 @@ end
 1. Requirements:
 
 - Ruby >= 3.0
-- Rails app
 - Direnv (don't forget your [rc file hook](https://direnv.net/docs/installation.html))
 
 2. Initial setup
