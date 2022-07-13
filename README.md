@@ -75,6 +75,7 @@ end
 
 ```
 bundle install
+cp .rspec.example .rspec
 cp .env.example .env
 direnv allow
 ```
