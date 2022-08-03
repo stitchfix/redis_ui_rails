@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "puma"
   spec.add_development_dependency "net-smtp"
   spec.add_development_dependency "mock_redis"
+  spec.add_development_dependency('rspec_junit_formatter')
 end
