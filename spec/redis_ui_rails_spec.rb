@@ -12,7 +12,7 @@ RSpec.describe RedisUiRails do
           {
             id: "test",
             url: "test/url",
-            name: "test name"
+            name: "expected name"
           }
         ]
       end
