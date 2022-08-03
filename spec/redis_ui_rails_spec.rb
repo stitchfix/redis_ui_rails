@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe RedisUiRails do
+RSpec.describe StitchFix::RedisUiRails do
   after(:each) do
     described_class.remove_instance_variable(:@config)
   end

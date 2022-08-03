@@ -7,14 +7,14 @@ A mountable UI Rails engine for inspecting your Redis instances. The teams that 
 1. Add this line to your application's Gemfile:
 
 ```ruby
-gem 'redis_ui_rails'
+gem "stitchfix-redis_ui_rails", require: "redis_ui_rails"
 ```
 
 2. In `config/routes.rb`, mount the engine
 
 ```ruby
 Rails.application.routes.draw do
-  mount RedisUiRails::Engine => "/redis_ui"
+  mount StitchFix::RedisUiRails::Engine => "/redis_ui"
 end
 ```
 
@@ -39,7 +39,7 @@ Example:
 #   :resource_links (optional) Quick links to resources related to this instance.
 #   :enabled (optional) Allows enabling per environment. Defaults to true.
 #
-RedisUiRails.configure do |config|
+StitchFix::RedisUiRails.configure do |config|
   config.redis_instances = [
     {
       id: :local,

@@ -1,8 +1,8 @@
-require_relative "lib/redis_ui_rails/version"
+require "./lib/stitch_fix/redis_ui_rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "redis_ui_rails"
-  spec.version = RedisUiRails::VERSION
+  spec.name = "stitchfix-redis_ui_rails"
+  spec.version = StitchFix::RedisUiRails::VERSION
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Stitch Fix Engineering']
   spec.email       = ['eng@stitchfix.com']
@@ -30,5 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "puma"
   spec.add_development_dependency "net-smtp"
   spec.add_development_dependency "mock_redis"
-  spec.add_development_dependency('rspec_junit_formatter')
+  spec.add_development_dependency 'rspec_junit_formatter'
 end

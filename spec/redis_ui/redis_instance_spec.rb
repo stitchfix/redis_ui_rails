@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe RedisUiRails::RedisInstance do
+RSpec.describe StitchFix::RedisUiRails::RedisInstance do
   let(:options) do
     {
       id: "test",

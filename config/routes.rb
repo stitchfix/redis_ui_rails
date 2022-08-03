@@ -1,4 +1,4 @@
-RedisUiRails::Engine.routes.draw do
+StitchFix::RedisUiRails::Engine.routes.draw do
   root to: "dashboard#index"
 
   resources :instances, only: [:show]
