@@ -1,4 +1,4 @@
-RedisUi::Engine.routes.draw do
+RedisUiRails::Engine.routes.draw do
   root to: "dashboard#index"
 
   resources :instances, only: [:show]

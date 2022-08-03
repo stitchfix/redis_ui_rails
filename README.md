@@ -1,4 +1,4 @@
-# RedisUi
+# RedisUiRails
 
 A mountable UI Rails engine for inspecting your Redis instances. The teams that will get the most value out of this engine are teams that cannot use the Rails console to inspect their production Redis instances.
 
@@ -7,14 +7,14 @@ A mountable UI Rails engine for inspecting your Redis instances. The teams that 
 1. Add this line to your application's Gemfile:
 
 ```ruby
-gem 'redis_ui'
+gem 'redis_ui_rails'
 ```
 
 2. In `config/routes.rb`, mount the engine
 
 ```ruby
 Rails.application.routes.draw do
-  mount RedisUi::Engine => "/redis_ui"
+  mount RedisUiRails::Engine => "/redis_ui"
 end
 ```
 
@@ -39,7 +39,7 @@ Example:
 #   :resource_links (optional) Quick links to resources related to this instance.
 #   :enabled (optional) Allows enabling per environment. Defaults to true.
 #
-RedisUi.configure do |config|
+RedisUiRails.configure do |config|
   config.redis_instances = [
     {
       id: :local,

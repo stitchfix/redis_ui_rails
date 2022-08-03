@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe RedisUi::RedisInstance do
+RSpec.describe RedisUiRails::RedisInstance do
   let(:options) do
     {
       id: "test",

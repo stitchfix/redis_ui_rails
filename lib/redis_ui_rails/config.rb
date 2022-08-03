@@ -1,4 +1,4 @@
-module RedisUi
+module RedisUiRails
   class Config
     include ActiveModel::Validations
 

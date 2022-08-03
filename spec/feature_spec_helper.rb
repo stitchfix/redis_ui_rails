@@ -4,6 +4,6 @@ require "capybara/rspec"
 require "webdrivers"
 
 Capybara.configure do |c|
-  c.app = RedisUiDummy::Application
+  c.app = RedisUiRailsDummy::Application
   c.javascript_driver = :selenium_chrome
 end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RedisUi.configure do |config|
+RedisUiRails.configure do |config|
   config.redis_instances = [
     {
       id: :dummy,

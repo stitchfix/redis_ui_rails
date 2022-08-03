@@ -1,13 +1,13 @@
-require_relative "lib/redis_ui/version"
+require_relative "lib/redis_ui_rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "redis_ui"
-  spec.version = RedisUi::VERSION
+  spec.name = "redis_ui_rails"
+  spec.version = RedisUiRails::VERSION
   spec.platform    = Gem::Platform::RUBY
   spec.authors     = ['Stitch Fix Engineering']
   spec.email       = ['eng@stitchfix.com']
-  spec.homepage    = "https://github.com/stitchfix/redis-ui-rails"
-  spec.summary = "A UI for Stitch Fix Redis."
+  spec.homepage    = "https://github.com/stitchfix/redis_ui_rails"
+  spec.summary = "A drop-in Rails UI for Redis."
 
   spec.files = `git ls-files`.split("\n")
   spec.test_files    = `git ls-files -- {spec,features}/*`.split("\n")

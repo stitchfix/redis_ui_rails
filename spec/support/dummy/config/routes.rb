@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount RedisUi::Engine => "/redis_ui"
+  mount RedisUiRails::Engine => "/redis_ui"
 end

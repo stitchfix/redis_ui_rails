@@ -2,7 +2,7 @@
 
 ENV["RAILS_ENV"] ||= "test"
 
-require_relative "../lib/redis_ui"
+require_relative "../lib/redis_ui_rails"
 require "pry"
 require "mock_redis"
 

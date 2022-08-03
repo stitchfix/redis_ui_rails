@@ -1,7 +1,7 @@
-module RedisUi
+module RedisUiRails
   class DashboardController < ApplicationController
     def index
-      @redis_instances = RedisUi.config.redis_instances
+      @redis_instances = RedisUiRails.config.redis_instances
     end
   end
 end

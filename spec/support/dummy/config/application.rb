@@ -7,9 +7,9 @@ require "rails"
 require "action_controller/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
-require "redis_ui"
+require "redis_ui_rails"
 
-module RedisUiDummy
+module RedisUiRailsDummy
   class Application < Rails::Application
     config.load_defaults Rails::VERSION::STRING.to_f
   end

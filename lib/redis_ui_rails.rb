@@ -5,12 +5,12 @@ require "forwardable"
 require "uri"
 require "redis"
 
-require "redis_ui/version"
-require "redis_ui/redis_instance"
-require "redis_ui/config"
-require "redis_ui/engine"
+require "redis_ui_rails/version"
+require "redis_ui_rails/redis_instance"
+require "redis_ui_rails/config"
+require "redis_ui_rails/engine"
 
-module RedisUi
+module RedisUiRails
   def self.config
     @config ||= Config.new
   end

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe RedisUi::Config do
+RSpec.describe RedisUiRails::Config do
   let(:config) { described_class.new }
   let(:hash_instance) do
     {
@@ -20,7 +20,7 @@ RSpec.describe RedisUi::Config do
     it "slurps hash instances into instance objects" do
       config.ingest
 
-      expect(config.redis_instances.map(&:class)).to contain_exactly(RedisUi::RedisInstance)
+      expect(config.redis_instances.map(&:class)).to contain_exactly(RedisUiRails::RedisInstance)
     end
   end
 

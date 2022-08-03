@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe RedisUi do
+RSpec.describe RedisUiRails do
   after(:each) do
     described_class.remove_instance_variable(:@config)
   end
