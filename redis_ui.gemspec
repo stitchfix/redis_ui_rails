@@ -3,11 +3,16 @@ require_relative "lib/redis_ui/version"
 Gem::Specification.new do |spec|
   spec.name = "redis_ui"
   spec.version = RedisUi::VERSION
-  spec.authors = ["Adam Steel"]
-  spec.email = ["adam.steel@stitchfix.com"]
+  spec.platform    = Gem::Platform::RUBY
+  spec.authors     = ['Stitch Fix Engineering']
+  spec.email       = ['eng@stitchfix.com']
+  spec.homepage    = "https://github.com/stitchfix/redis-ui-rails"
   spec.summary = "A UI for Stitch Fix Redis."
 
-  spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  spec.files = `git ls-files`.split("\n")
+  spec.test_files    = `git ls-files -- {spec,features}/*`.split("\n")
+  spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  spec.require_paths = ["lib"]
 
   spec.add_dependency "rails", ">= 6.1.5.1"
   spec.add_dependency "sprockets", ">= 3.7.2"
@@ -15,6 +20,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "redis"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "pry"
+  spec.add_development_dependency "stitchfix-y"
+
 
   # For Dummy Rails app tests
   spec.add_development_dependency "capybara"

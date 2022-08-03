@@ -1,5 +1,4 @@
-source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+source "https://stitchfix01.jfrog.io/stitchfix01/api/gems/eng-gems/"
 
 # Specify your gem's dependencies in redis_ui.gemspec.
 gemspec

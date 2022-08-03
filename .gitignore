@@ -1,8 +1,19 @@
 tmp
 *.log
-!database.yml
+pkg
+.vimrc
+*.sw?
+.idea/
+.tddium*
+.DS_Store
+.jhw-cache
+*.orig
+spec/examples.txt
+spec/reports
+Session.vim
 Gemfile.lock
 
+!database.yml
 .env
 .rspec
 .tool-versions
