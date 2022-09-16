@@ -1,19 +1,11 @@
 version: 2.1
 
 # ------------------------------------------------------------------------------
-# Declare Orbs
-# ------------------------------------------------------------------------------
-
-
-orbs:
-  browser-tools: circleci/browser-tools@1.4.0
-
-# ------------------------------------------------------------------------------
 # Docker images
 # ------------------------------------------------------------------------------
 
 ruby_image: &ruby_image
-  image: cimg/ruby:3.1-node
+  image: cimg/ruby:3.1.1-browsers
   environment:
     RACK_ENV: test
     RAILS_ENV: test
@@ -40,9 +32,6 @@ jobs:
       - run:
           name: Install Ruby deps
           command: bundle install
-      - run:
-          name: Install CircleCI Browser Tools
-          command: browser-tools/install-browser-tools
       - run:
           name: Running tests
           command: |
